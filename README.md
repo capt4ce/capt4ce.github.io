@@ -8,9 +8,9 @@ I am just a simple man who loves tech and programming. I like talking about idea
 
 I do Backend, Frontend and blockchain development.
 
-## My experience
+## My skill and experience
 ### Blockchain 
-blockchain concepts, smart contract
+blockchain concepts, smart contract, dApp integration
 
 ### FrontEnd development 
 React, NextJS

@@ -95,6 +95,17 @@ const App = () => {
                   Great team player or tough solo fighter.
                 </figcaption>
               </figure>
+              <div className="contacts">
+                <div style={{ listStyleType: 'none' }} className="m-0 p-0">
+                  {links.map((link) => (
+                    <div className="d-inline-block">
+                      <a className="btn btn-outline-primary" href={link.link}>
+                        {link.label}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
             <div className="col-md-6 text-end">
               <img
@@ -105,21 +116,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="contacts">
-        <div
-          style={{ listStyleType: 'none' }}
-          className="m-0 p-0 justify-content-center text-center"
-        >
-          {links.map((link) => (
-            <div className="d-inline-block">
-              <a className="btn btn-outline-primary" href={link.link}>
-                {link.label}
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div>
+      <div className="my-5">
         <h2>Skills</h2>
         {skills.map((skill) => (
           <div className="my-3">

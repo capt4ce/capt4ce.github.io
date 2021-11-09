@@ -61,13 +61,9 @@ const App = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container my-5">
       <div className="row">
-        <div className="col">
-          <div className="brand text-center">
-            <h1 className="my-2">Ahmad Ali Abdilah</h1>
-          </div>
-        </div>
+        <div className="col"></div>
         {/* <div>
         <div>
           Skills
@@ -81,6 +77,9 @@ const App = () => {
         <div className="card-body">
           <div className="row align-items-center px-5">
             <div className="col-md-6">
+              <div>
+                <h1 className="my-2">Ahmad Ali Abdilah</h1>
+              </div>
               <figure>
                 <blockquote class="blockquote">
                   <p>Fullstack web developer + Blockchain Developer.</p>

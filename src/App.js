@@ -128,7 +128,9 @@ const App = () => {
           </div>
         ))}
       </div>
-      {/* <div>Blog</div> */}
+      <div className="my-5">
+        <h2>Blog Posts</h2>
+      </div>
     </div>
   );
 };

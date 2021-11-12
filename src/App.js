@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import bootstrap from 'bootstrap'; // eslint-disable-line no-unused-vars
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
+  useEffect(() => {
+    window.MediumWidget.Init({
+      renderTo: '#medium-widget',
+      params: {
+        resource: 'https://medium.com/@ahmad.ali.abdilah',
+        postsPerLine: 4,
+        limit: 10,
+        picture: 'big',
+        fields: ['description', 'author', 'claps', 'likes', 'publishAt'],
+        ratio: 'landscape',
+      },
+    });
+    return () => {
+      window.MediumWidget.unmount();
+    };
+  }, []);
+
   const links = [
     {
       link: 'mailto:ahmad.ali.abdilah@gmail.com',
@@ -130,6 +147,9 @@ const App = () => {
       </div>
       <div className="my-5">
         <h2>Blog Posts</h2>
+        <div className="container mb-5">
+          <div id="medium-widget"></div>
+        </div>
       </div>
     </div>
   );
